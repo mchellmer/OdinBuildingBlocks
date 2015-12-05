@@ -1,7 +1,8 @@
 # stock_picker takes an array of daily stock prices and returns a pair of days
 # that are best to buy and sell
+# returns [day to buy, day to sell] where days begin with 0
 def stock_picker(prices)
-  # Find optimal sell price if buying on first day
+  # Initialize days to buy and sell, as well as 0 profit
   dayB = 0
   dayS = 0
   prof = 0
